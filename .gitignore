@@ -1,0 +1,32 @@
+# Node / JS artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Builds / dist
+dist/
+build/
+.turbo/
+.cache/
+.parcel-cache/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Coverage / test output
+coverage/
+.nyc_output/
+
+# Supabase temp (if present)
+supabase/.temp/

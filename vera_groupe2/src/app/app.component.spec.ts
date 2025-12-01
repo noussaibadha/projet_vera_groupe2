@@ -1,10 +1,13 @@
 import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { AppComponent } from './app.component';
+import { routes } from './app.routes';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
+      providers: [provideRouter(routes)],
     }).compileComponents();
   });
 
@@ -20,10 +23,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('vera_groupe2');
   });
 
-  it('should render title', () => {
+  it('should render the navigation shell', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, vera_groupe2');
+    expect(compiled.textContent).toContain('Dashboard');
   });
 });

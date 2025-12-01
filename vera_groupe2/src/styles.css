@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.title-font {
+  font-family: 'Lastik', 'Montserrat', 'Segoe UI', sans-serif;
+}
